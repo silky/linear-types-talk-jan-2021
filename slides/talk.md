@@ -198,17 +198,15 @@ enables programming more explicitly:
 
     -- One quantum variable
     data Qubit
-    -- Simplistic representation of the tensor-product
-    data a :*: b = a :*: b
 
     h :: Qubit %1-> Qubit
     cx ::   Qubit 
        %1-> Qubit 
-       %1-> Qubit :*: Qubit
+       %1-> (Qubit, Qubit)
 
-    algorithm ::   Qubit :*: Qubit 
-              %1-> Qubit :*: Qubit
-    algorithm (s0 :*: s1) = cx (h s0) s1
+    algorithm ::   (Qubit, Qubit)
+              %1-> (Qubit, Qubit)
+    algorithm (s0, s1) = cx (h s0) s0
     ```
 
     - Maybe this is better??

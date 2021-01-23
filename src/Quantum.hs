@@ -9,13 +9,8 @@ import Prelude (Int, undefined)
 -- Classical bit
 data Bit = Int
 
-
 -- One quantum variable
 data Qubit
-
-
--- Simplistic representation of the tensor-product
-data a :*: b = a :*: b
 
 
 -- | Apply the "hadamard" operation to the qubit.
@@ -37,17 +32,17 @@ measure = undefined
 -- qubit is equal to `1`.
 cx ::   Qubit 
    %1-> Qubit 
-   %1-> Qubit :*: Qubit
+   %1-> (Qubit, Qubit)
 cx = undefined
 
 
-algorithm ::   Qubit :*: Qubit 
-          %1-> Qubit :*: Qubit
--- algorithm (s0 :*: s1) = cx (h s0) s0 -- Whoops! Typo.
-algorithm (s0 :*: s1) = cx (h s0) s1
+algorithm ::   (Qubit, Qubit)
+          %1-> (Qubit, Qubit)
+-- algorithm (s0, s1) = cx (h s0) s0 -- Whoops! Typo.
+algorithm (s0, s1) = cx (h s0) s1
 
 
-algorithm2 ::   (Qubit :*: Qubit :*: Qubit) 
-           %1-> ((Qubit :*: Qubit), Bit)
--- algorithm2 (s0 :*: s1 :*: s2) = (cx (h s0) s1, 0) -- Whoops! Forgot to measure.
-algorithm2 (s0 :*: s1 :*: s2) = (cx (h s0) s1, measure s2)
+algorithm2 ::   (Qubit, Qubit, Qubit) 
+           %1-> ((Qubit, Qubit), Bit)
+-- algorithm2 (s0, s1, s2) = (cx (h s0) s1, 0) -- Whoops! Forgot to measure.
+algorithm2 (s0, s1, s2) = (cx (h s0) s1, measure s2)
