@@ -16,9 +16,10 @@ in stack itself](https://github.com/commercialhaskell/stack/issues/5134).
 
 ## Talk
 
-You can find the slides for the talk here: <./slides/talk.md>.
+You can find the slides for the talk here: [./slides/talk.md](./slides/talk.md).
 
-In order to run them, you could use [patat](). If you're on linux and using
-konsole (like me) you'll need to use my hacked version of
+In order to run them, you could use
+[patat](https://github.com/jaspervdj/patat/), However,  if you're on linux and
+using konsole (like me) you'll need to use my hacked version of
 [patat](https://github.com/silky/patat/tree/terrible-hack-that-i-feel-very-guilty-about)
 so that the image of SPJ clears when you switch slides.
