@@ -5,7 +5,7 @@ Meetup](https://www.meetup.com/Cambridge-NonDysFunctional-Programmers/events/275
 
 ## Usage
 
-Using stack, things "should just work":
+Using [stack](https://www.haskellstack.org/), things "should just work":
 
 ```
 stack build
