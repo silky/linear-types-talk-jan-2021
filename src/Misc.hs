@@ -4,3 +4,8 @@
 
 -- f :: [Int] %1-> [Int] %1-> Int
 -- f xs ys = sum (xs ++ ys) ++ sum ys
+--
+--
+-- TODO:
+--  - Unrestricted
+--  - The list thing above

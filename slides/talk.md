@@ -216,10 +216,10 @@ enables programming more explicitly:
 
 # References
 
-- Linear Haskell: <https://arxiv.org/pdf/1710.09756.pdf>
-- GHC Proposal: <https://ghc.gitlab.haskell.org/ghc/doc/users_guide/exts/linear_types.html>
-- linear-base library: <https://github.com/tweag/linear-base>
-- Proto-Quipper-D:
+- The Linear Haskell paper: <https://arxiv.org/pdf/1710.09756.pdf>
+- The GHC proposal: <https://ghc.gitlab.haskell.org/ghc/doc/users_guide/exts/linear_types.html>
+- The `linear-base` library: <https://github.com/tweag/linear-base>
+- The Proto-Quipper-D language/paper:
     - <https://arxiv.org/pdf/2005.08396.pdf>
     - <https://gitlab.com/frank-peng-fu/dpq-remake>
 - *~ Thanks! ~*
