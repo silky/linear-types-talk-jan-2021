@@ -23,14 +23,11 @@ patat:
 # Plan!
 
 1. Haskell in one slide!
-
 2. What are linear types?
-
 3. Examples in Haskell
-
 4. Linear Base
-
 5. A "practical" example
+
 
 # 
 
@@ -56,7 +53,7 @@ conditions
   f x = ...
   ```
 
-- Maybe we'd like to make sure (at compile time) that this function uses the
+- Maybe we'd like to make sure (at compile time) that this function _uses_ the
 `x` variable.
 
 - Up until recently, in Haskell, this can't be expressed via the type system.
