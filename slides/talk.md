@@ -18,6 +18,8 @@ patat:
     right: 1
 ...
 
+# Hello!
+
 # Plan!
 
 1. Haskell in one slide!
