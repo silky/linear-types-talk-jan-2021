@@ -1,0 +1,15 @@
+#!/bin/sh
+#
+# Ignore warnings around decoding bytes:
+#
+# See <https://github.com/commercialhaskell/stack/issues/5134> for more
+# discussion.
+#
+stack build      \
+  --fast         \
+  --file-watch   \
+  --color=always \
+  2>&1 |         \
+  sed -r         \
+      -e '/^(\x1b\[[0-9;]*m)?Warning:/,/not enough bytes.*$/d' \
+      -e '/Stack has not been tested.*$/d'
