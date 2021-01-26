@@ -1,6 +1,6 @@
 ---
 title: Linear Types in Haskell
-author: Noon van der Silk
+author: Noon van der Silk ~ noonsilk@gmail.com
 patat:
   images:
     backend: w3m
@@ -223,3 +223,6 @@ enables programming more explicitly:
     - <https://arxiv.org/pdf/2005.08396.pdf>
     - <https://gitlab.com/frank-peng-fu/dpq-remake>
 - *~ Thanks! ~*
+
+- I'm new to Cambridge; keen to meet people, so please reach out and say hello!
+
