@@ -14,9 +14,10 @@ someLinear (Ur a) = (a, a)
 -- ex2 :: a -> Ur a
 -- ex2 a = Ur a
 
--- Used in the File API
---
+
+-- Used in the File API (from the paper)
+-- 
 -- type File
 -- openFile  :: FilePath → IOL 1 File
--- readLine  :: File ⊸ IOL 1 (File,Unrestricted ByteString)
+-- readLine  :: File ⊸ IOL 1 (File, Unrestricted ByteString)
 -- closeFile :: File ⊸ IOL ω ()

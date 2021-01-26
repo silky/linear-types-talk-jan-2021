@@ -224,12 +224,20 @@ enables programming more explicitly:
 # References
 
 - The Linear Haskell paper: <https://arxiv.org/pdf/1710.09756.pdf>
-- The GHC proposal: <https://ghc.gitlab.haskell.org/ghc/doc/users_guide/exts/linear_types.html>
-- The `linear-base` library: <https://github.com/tweag/linear-base>
-- The Proto-Quipper-D language/paper:
-    - <https://arxiv.org/pdf/2005.08396.pdf>
-    - <https://gitlab.com/frank-peng-fu/dpq-remake>
-- *~ Thanks! ~*
 
-- I'm new to Cambridge; keen to meet people, so please reach out and say hello!
+- The GHC proposal: <https://ghc.gitlab.haskell.org/ghc/doc/users_guide/exts/linear_types.html>
+
+- The `linear-base` library: <https://github.com/tweag/linear-base>
+
+- The Proto-Quipper-D language/paper:
+
+    - <https://arxiv.org/pdf/2005.08396.pdf>
+
+    - <https://gitlab.com/frank-peng-fu/dpq-remake>
+
+- This talk is here: <https://github.com/silky/linear-types-talk-jan-2021>
+
+- *~ Thanks! Questions? ~*
+
+    - I'm new to Cambridge; keen to meet people, so please reach out and say hello!
 
