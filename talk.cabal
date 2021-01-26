@@ -18,6 +18,7 @@ library
       Example1
       Example2
       Quantum
+      Misc
   other-modules:
       Paths_talk
   hs-source-dirs:

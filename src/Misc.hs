@@ -1,11 +1,22 @@
--- sum :: [Int] %1-> Int
--- sum []     = 0
--- sum (x:xs) = x + sum xs
+{-# LANGUAGE LinearTypes       #-}
+{-# LANGUAGE NoImplicitPrelude #-}
 
--- f :: [Int] %1-> [Int] %1-> Int
--- f xs ys = sum (xs ++ ys) ++ sum ys
+module Misc where
+
+import Prelude (Int)
+import Data.Num.Linear
+import Data.Unrestricted.Linear (Ur(..))
+
+-- Note: Here we use "Unrestricted".
+someLinear :: Ur a %1-> (a,a)
+someLinear (Ur a) = (a, a)
+
+-- ex2 :: a -> Ur a
+-- ex2 a = Ur a
+
+-- Used in the File API
 --
---
--- TODO:
---  - Unrestricted
---  - The list thing above
+-- type File
+-- openFile  :: FilePath → IOL 1 File
+-- readLine  :: File ⊸ IOL 1 (File,Unrestricted ByteString)
+-- closeFile :: File ⊸ IOL ω ()

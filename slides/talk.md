@@ -171,6 +171,13 @@ conditions
     - One key issue - **The no-cloning theorem** - it says there is no way to copy a
     quantum variable.
 
+    - Now, I know what you're thinking ...
+
+#
+
+![](rollsafe.png)
+
+
 
 # Quantum computing implementations
 
