@@ -8,7 +8,7 @@ import Data.Num.Linear
 import Data.Unrestricted.Linear (Ur(..))
 
 -- Note: Here we use "Unrestricted".
-someLinear :: Ur a %1-> (a,a)
+someLinear :: Ur a %1-> (a, a)
 someLinear (Ur a) = (a, a)
 
 -- ex2 :: a -> Ur a
